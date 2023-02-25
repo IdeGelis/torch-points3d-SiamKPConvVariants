@@ -1,0 +1,20 @@
+num_workers: 10
+batch_size: 10
+cuda: 0
+weight_name: "miou_ch" # Used during resume, select with model to load from [miou, macc, acc, miou_ch..., latest]
+enable_cudnn: True
+checkpoint_dir: "/share/home/degelis/dev/torch-points3d/outputs/SiamKPConv-2023-02-05/SiamKPConv-2023-02-05-SiamEncFusionSkipKPConv-20230205_181605/"
+model_name: SiameseKPConv # SiameseKPConvUnshared SiameseKPConv
+precompute_multi_scale: False # Compute multiscate features on cpu for faster training / inference
+enable_dropout: False
+voting_runs: 1
+
+tracker_options: # Extra options for the tracker
+  full_pc: True
+  full_res: True
+  save_pc: True
+  name_test: ""
+
+hydra:
+  run:
+    dir: ${checkpoint_dir}/eval/${now:%Y-%m-%d_%H-%M-%S}

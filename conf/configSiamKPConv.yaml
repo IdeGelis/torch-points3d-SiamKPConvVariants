@@ -1,0 +1,31 @@
+defaults: # for loading the default config
+  - task: change_detection # Task performed (segmentation, classification etc...)
+    optional: True
+  - model_type: siamesekpconv_unshared #siamesekpconv_cls  #siamesekpconv_unshared #siamesekpconv # Type of model to use, e.g. pointnet2, rsconv etc...
+    optional: True
+  - dataset: Urb3DSimulPair # Urb3DCD DS: Urb3DSimulPair  #Urb3DCD_cls dataset: Urb3DCDPair_cls
+    optional: True
+
+  - visualization: default
+  - lr_scheduler: exponential
+  - training: defaultUrb3D
+
+  - debugging: default.yaml
+  - models: ${defaults.0.task}/${defaults.1.model_type}
+  - data: ${defaults.0.task}/${defaults.2.dataset}
+#  - sota # Contains current SOTA results on different datasets (extracted from papers !).
+  - hydra/job_logging: custom
+  - hydra/output: custom  # add the support for user-defined experiment folder (where to save the experiment files)
+
+job_name: SiamKPConv-${now:%Y-%m-%d} # prefix name for saving the experiment file.
+model_name: SiameseKPConvUnshared #SiameseKPConv_cls  #SiameseKPConvUnshared #SiameseKPConv # Name of the specific model to load
+update_lr_scheduler_on: "on_epoch" # ["on_epoch", "on_num_batch", "on_num_sample"]
+selection_stage: ""
+pretty_print: True
+eval_frequency: 1
+
+tracker_options: # Extra options for the tracker
+  full_pc: False
+  full_res: False
+  make_submission: False
+  track_boxes: False
