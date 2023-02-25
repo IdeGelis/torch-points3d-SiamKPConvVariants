@@ -1,10 +1,10 @@
 # Variants of Siamese KPConv networks
-Iris de Gélis, Sébastien Lefèvre and Thomas Corpetti (ISPRS Journal, 2023)
+Iris de Gélis, Sébastien Lefèvre and Thomas Corpetti (Submitted to Remote Sensing Journal, 2023)
 
-This Git project is built upon Torch-Point3D depository to share code for Siamese KPConv and Siamese KPConv Cls networks for 3D point clouds change segmentation and classification respectively. See our paper:
+This Git project is built upon Torch-Point3D depository to share code for OneConvFusion, Encoder Fusion SiamKPConv and Triplet KPConv networks for 3D point clouds change segmentation. See our up-coming paper for more details.
 
 <p align="center">
-   <img src="docs/imgs/SiamKPConv.png" >      
+   <img src="docs/imgs/EncFusionSiamKPConv-SkipAll.png" >      
 </p>
 
 
