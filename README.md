@@ -1,5 +1,5 @@
 # Variants of Siamese KPConv networks
-Iris de Gélis, Sébastien Lefèvre and Thomas Corpetti (Submitted to Remote Sensing Journal, 2023)
+Iris de Gélis, Sébastien Lefèvre and Thomas Corpetti (Submitted to IEEE TGRS, 2023)
 
 This Git project is built upon Torch-Point3D depository to share code for OneConvFusion, Encoder Fusion SiamKPConv and Triplet KPConv networks for 3D point clouds change segmentation. See our up-coming paper for more details.
 
