@@ -1,5 +1,9 @@
-# Variants of Siamese KPConv networks
-Iris de Gélis, Sébastien Lefèvre and Thomas Corpetti (Submitted to IEEE TGRS, 2023)
+# Change Detection Needs Change Information: Improving Deep 3-D Point Cloud Change Detection
+Iris de Gélis, Sébastien Lefèvre and Thomas Corpetti (IEEE TGRS, 2024)
+
+
+I. de Gélis, T. Corpetti and S. Lefèvre, "Change Detection Needs Change Information: Improving Deep 3-D Point Cloud Change Detection," in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-10, 2024, Art no. 5701810, doi: 10.1109/TGRS.2024.3359484.
+
 
 This Git project is built upon Torch-Point3D depository to share code for OneConvFusion, Encoder Fusion SiamKPConv and Triplet KPConv networks for 3D point clouds change segmentation. See our up-coming paper for more details.
 
