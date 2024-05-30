@@ -2,11 +2,11 @@ data:
   class: Urb3DSimulPairCylinder.Urb3DCDDataset
   dataset_name: "Urb3DSimul"
   task: change_detection
-  dataTrainFile:  /share/projects/deep3dt/datasets/Simul/CDBiDate/IEEE_Dataset_V2/1-Lidar05/Train/ #/gpfswork/rech/rin/utf14pr/dataset/Urb3DSimul/IEEE_Dataset_V1/5-MultiSensor/Train/ #
-  dataValFile:  /share/projects/deep3dt/datasets/Simul/CDBiDate/IEEE_Dataset_V2/1-Lidar05/Val/ #/gpfswork/rech/rin/utf14pr/dataset/Urb3DSimul/IEEE_Dataset_V1/5-MultiSensor/Val/ #
-  dataTestFile:  /share/projects/deep3dt/datasets/Simul/CDBiDate/IEEE_Dataset_V2/1-Lidar05/Test/ #/gpfswork/rech/rin/utf14pr/dataset/Urb3DSimul/IEEE_Dataset_V1/5-MultiSensor/Train/ #
+  dataTrainFile:  /your/path/to/train/set
+  dataValFile:  /your/path/to/val/set
+  dataTestFile:  /your/path/to/test/set
   dataroot: data
-  preprocessed_dir: /share/home/degelis/dev/torch-points3d/data/${data.dataset_name}/testets/ #/gpfswork/rech/rin/utf14pr/dev/torch-points3d/data/${data.dataset_name}/5-MultiSensor/ #
+  preprocessed_dir: /your/path/to/torch-points3d/data/${data.dataset_name}/name/ 
   nameInPly: "params" # IEEE V1 : "Urb3DSimul" / IEEE V2:"Params"
   first_subsampling: 1 #0.05 # Grid size of the input data
   use_category: False # Use object category information
